@@ -20,43 +20,43 @@ import org.mybatis.generator.internal.DefaultShellCallback;
  */
 
 public class GenMain {
-	public static void main(String[] args) {
-		List<String> warnings = new ArrayList<String>();
-		boolean overwrite = true;
-		// 如果这里出现空指针，直接写绝对路径即可。
+    public static void main(String[] args) {
+        List <String> warnings = new ArrayList <String>();
+        boolean overwrite = true;
+        // 如果这里出现空指针，直接写绝对路径即可。
 
-		String genCfg = "G:\\update\\database\\src\\main\\resources\\generatorConfig.xml";
-		System.out.println(genCfg);
+        String genCfg = "G:\\update\\database\\src\\main\\resources\\generatorConfig.xml";
+        System.out.println(genCfg);
 
-		File configFile = new File(genCfg);
-		System.out.println(configFile.getAbsolutePath());
-		ConfigurationParser cp = new ConfigurationParser(warnings);
-		Configuration config = null;
-		System.out.println("1");
-		try {
-			config = cp.parseConfiguration(configFile);
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (XMLParserException e) {
-			e.printStackTrace();
-		}
-		DefaultShellCallback callback = new DefaultShellCallback(overwrite);
-		MyBatisGenerator myBatisGenerator = null;
-		System.out.println("1");
+        File configFile = new File(genCfg);
+        System.out.println(configFile.getAbsolutePath());
+        ConfigurationParser cp = new ConfigurationParser(warnings);
+        Configuration config = null;
+        System.out.println("1");
+        try {
+            config = cp.parseConfiguration(configFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (XMLParserException e) {
+            e.printStackTrace();
+        }
+        DefaultShellCallback callback = new DefaultShellCallback(overwrite);
+        MyBatisGenerator myBatisGenerator = null;
+        System.out.println("1");
 
-		try {
-			myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
-		} catch (InvalidConfigurationException e) {
-			e.printStackTrace();
-		}
-		try {
-			myBatisGenerator.generate(null);
-		} catch (SQLException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
+        try {
+            myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
+        } catch (InvalidConfigurationException e) {
+            e.printStackTrace();
+        }
+        try {
+            myBatisGenerator.generate(null);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
