@@ -51,28 +51,128 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-
-        <table tableName="y_extract_config" domainObjectName="ExtractConfig"
+        <table tableName="r_remind" domainObjectName="Remind"
                enableCountByExample="true" enableUpdateByExample="true"
                enableDeleteByExample="true" enableSelectByExample="true"
                selectByExampleQueryId="true">
             <property name="useActualColumnNames" value="false"/>
             <property name="useActualColumnNames" value="false"/>
         </table>
-        <!--<table tableName="y_user_idcard" domainObjectName="userIdCard"-->
+        <!--<table tableName="y_user_earn" domainObjectName="UserEarn"-->
                <!--enableCountByExample="true" enableUpdateByExample="true"-->
                <!--enableDeleteByExample="true" enableSelectByExample="true"-->
                <!--selectByExampleQueryId="true">-->
             <!--<property name="useActualColumnNames" value="false"/>-->
             <!--<property name="useActualColumnNames" value="false"/>-->
         <!--</table>-->
-        <!--<table tableName="y_user_bankcard" domainObjectName="UserBankCard"-->
+        <!--<table tableName="mu_user" domainObjectName="Admin"-->
                <!--enableCountByExample="true" enableUpdateByExample="true"-->
                <!--enableDeleteByExample="true" enableSelectByExample="true"-->
                <!--selectByExampleQueryId="true">-->
             <!--<property name="useActualColumnNames" value="false"/>-->
             <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_user" domainObjectName="User"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_order_shipping" domainObjectName="OrderShiping"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
         <!--</table>-->
 
+
+        <!--<table tableName="tb_order_item" domainObjectName="OrderItem"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_order" domainObjectName="Order"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+
+
+        <!--<table tableName="tb_item_param_key" domainObjectName="ItemParamKey"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_item_param_item" domainObjectName="ItemParamItem"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+
+
+        <!--<table tableName="tb_item_param_group" domainObjectName="ItemParamGroup"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_item_param" domainObjectName="ItemParam"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+
+
+        <!--<table tableName="tb_item_desc" domainObjectName="ItemDesc"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_item_cat" domainObjectName="ItemCat"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+
+
+        <!--<table tableName="tb_item" domainObjectName="Item"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+        <!--<table tableName="tb_content_category" domainObjectName="ContentCategory"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
+
+        <!--<table tableName="tb_content" domainObjectName="Content"-->
+        <!--enableCountByExample="true" enableUpdateByExample="true"-->
+        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
+        <!--selectByExampleQueryId="true">-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--<property name="useActualColumnNames" value="false"/>-->
+        <!--</table>-->
     </context>
 </generatorConfiguration>
