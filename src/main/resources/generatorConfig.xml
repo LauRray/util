@@ -29,150 +29,45 @@
             也可以使用“MAVEN”来自动生成，这样生成的代码会在target/generatord-source目录下 -->
         <!--<javaModelGenerator targetPackage="com.joey.mybaties.test.pojo" targetProject="MAVEN"> -->
         <javaModelGenerator
-                targetPackage="xkc.entity" targetProject="./src/main/java">
+                targetPackage="cjmj.pojo" targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
             <!-- 从数据库返回的值被清理前后的空格 -->
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
         <!--对应的mapper.xml文件 -->
-        <sqlMapGenerator targetPackage="mapper"
-
+        <sqlMapGenerator targetPackage="/cjmj/mapper"
                          targetProject="./src/main/resources">
-
-
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
         <!-- 对应的Mapper接口类文件 -->
         <javaClientGenerator type="XMLMAPPER"
-                             targetPackage="xkc.mapper.admin"
+                             targetPackage="cjmj.mapper"
                              targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
-        <table tableName="r_remind" domainObjectName="Remind"
+        <table tableName="classifyModel" domainObjectName="manager_classify_model"
                enableCountByExample="true" enableUpdateByExample="true"
                enableDeleteByExample="true" enableSelectByExample="true"
                selectByExampleQueryId="true">
             <property name="useActualColumnNames" value="false"/>
             <property name="useActualColumnNames" value="false"/>
         </table>
-        <!--<table tableName="y_user_earn" domainObjectName="UserEarn"-->
-               <!--enableCountByExample="true" enableUpdateByExample="true"-->
-               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-               <!--selectByExampleQueryId="true">-->
-            <!--<property name="useActualColumnNames" value="false"/>-->
-            <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-        <!--<table tableName="mu_user" domainObjectName="Admin"-->
-               <!--enableCountByExample="true" enableUpdateByExample="true"-->
-               <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-               <!--selectByExampleQueryId="true">-->
-            <!--<property name="useActualColumnNames" value="false"/>-->
-            <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-        <!--<table tableName="tb_user" domainObjectName="User"-->
-        <!--enableCountByExample="true" enableUpdateByExample="true"-->
-        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-        <!--selectByExampleQueryId="true">-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-        <!--<table tableName="tb_order_shipping" domainObjectName="OrderShiping"-->
-        <!--enableCountByExample="true" enableUpdateByExample="true"-->
-        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-        <!--selectByExampleQueryId="true">-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-
-
-        <!--<table tableName="tb_order_item" domainObjectName="OrderItem"-->
-        <!--enableCountByExample="true" enableUpdateByExample="true"-->
-        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-        <!--selectByExampleQueryId="true">-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-        <!--<table tableName="tb_order" domainObjectName="Order"-->
-        <!--enableCountByExample="true" enableUpdateByExample="true"-->
-        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-        <!--selectByExampleQueryId="true">-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-
-
-        <!--<table tableName="tb_item_param_key" domainObjectName="ItemParamKey"-->
-        <!--enableCountByExample="true" enableUpdateByExample="true"-->
-        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-        <!--selectByExampleQueryId="true">-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-        <!--<table tableName="tb_item_param_item" domainObjectName="ItemParamItem"-->
-        <!--enableCountByExample="true" enableUpdateByExample="true"-->
-        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-        <!--selectByExampleQueryId="true">-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-
-
-        <!--<table tableName="tb_item_param_group" domainObjectName="ItemParamGroup"-->
-        <!--enableCountByExample="true" enableUpdateByExample="true"-->
-        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-        <!--selectByExampleQueryId="true">-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-        <!--<table tableName="tb_item_param" domainObjectName="ItemParam"-->
-        <!--enableCountByExample="true" enableUpdateByExample="true"-->
-        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-        <!--selectByExampleQueryId="true">-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-
-
-        <!--<table tableName="tb_item_desc" domainObjectName="ItemDesc"-->
-        <!--enableCountByExample="true" enableUpdateByExample="true"-->
-        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-        <!--selectByExampleQueryId="true">-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-        <!--<table tableName="tb_item_cat" domainObjectName="ItemCat"-->
-        <!--enableCountByExample="true" enableUpdateByExample="true"-->
-        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-        <!--selectByExampleQueryId="true">-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-
-
-        <!--<table tableName="tb_item" domainObjectName="Item"-->
-        <!--enableCountByExample="true" enableUpdateByExample="true"-->
-        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-        <!--selectByExampleQueryId="true">-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-        <!--<table tableName="tb_content_category" domainObjectName="ContentCategory"-->
-        <!--enableCountByExample="true" enableUpdateByExample="true"-->
-        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-        <!--selectByExampleQueryId="true">-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
-
-        <!--<table tableName="tb_content" domainObjectName="Content"-->
-        <!--enableCountByExample="true" enableUpdateByExample="true"-->
-        <!--enableDeleteByExample="true" enableSelectByExample="true"-->
-        <!--selectByExampleQueryId="true">-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--<property name="useActualColumnNames" value="false"/>-->
-        <!--</table>-->
+        <table tableName="Order" domainObjectName="sys_order"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+            <property name="useActualColumnNames" value="false"/>
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="OrderItem" domainObjectName="sys_order_item"
+               enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true">
+            <property name="useActualColumnNames" value="false"/>
+            <property name="useActualColumnNames" value="false"/>
+        </table>
     </context>
 </generatorConfiguration>
