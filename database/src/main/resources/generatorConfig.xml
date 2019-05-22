@@ -29,7 +29,7 @@
             也可以使用“MAVEN”来自动生成，这样生成的代码会在target/generatord-source目录下 -->
         <!--<javaModelGenerator targetPackage="com.joey.mybaties.test.pojo" targetProject="MAVEN"> -->
         <javaModelGenerator
-                targetPackage="cn.com.goodshare.goodshare_admin.pojo.momAndInfant" targetProject="./src/main/java">
+                targetPackage="com.zhuoshang.gongchengzhaozhaozhao.pojo" targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
             <!-- 从数据库返回的值被清理前后的空格 -->
             <property name="trimStrings" value="true"/>
@@ -43,68 +43,32 @@
 
         <!-- 对应的Mapper接口类文件 -->
         <javaClientGenerator type="XMLMAPPER"
-                             targetPackage="cn.com.goodshare.goodshare_admin.mapper.momAndInfant"
+                             targetPackage="com.zhuoshang.gongchengzhaozhaozhao.mapper"
                              targetProject="./src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
 
-        <table tableName="tbl_mother_catgroy"
-               domainObjectName="MotherClassify" enableCountByExample="true"
+        <table tableName="tb_construction_team"
+               domainObjectName="ConstructionTeam" enableCountByExample="true"
                enableUpdateByExample="true" enableDeleteByExample="true"
                enableSelectByExample="true" selectByExampleQueryId="true">
 
             <property name="useActualColumnNames" value="false"/>
-
-            <!--<columnOverride column="content" javaType="java.lang.String" jdbcType="VARCHAR" />-->
-            <!--<columnOverride column="gongzhonghao" javaType="java.lang.String" jdbcType="VARCHAR" />-->
-            <!--<columnOverride column="ywyuedu" javaType="java.lang.String" jdbcType="VARCHAR" />-->
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
-        <table tableName="tbl_mother_article"
-               domainObjectName="MotherArticle" enableCountByExample="true"
+        <table tableName="tb_construction_team_member"
+               domainObjectName="ConstructionTeamMenber" enableCountByExample="true"
                enableUpdateByExample="true" enableDeleteByExample="true"
                enableSelectByExample="true" selectByExampleQueryId="true">
 
             <property name="useActualColumnNames" value="false"/>
-
-            <columnOverride column="show_pic" javaType="java.lang.String" jdbcType="VARCHAR" />
-            <columnOverride column="content" javaType="java.lang.String" jdbcType="VARCHAR" />
-            <columnOverride column="pic_arr" javaType="java.lang.String" jdbcType="VARCHAR" />
-            <columnOverride column="pic_content" javaType="java.lang.String" jdbcType="VARCHAR" />
+            <!--返回主键-->
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
 
-        <table tableName="tbl_mother_article_collect"
-               domainObjectName="MotherArticleCollect" enableCountByExample="true"
-               enableUpdateByExample="true" enableDeleteByExample="true"
-               enableSelectByExample="true" selectByExampleQueryId="true">
 
-            <property name="useActualColumnNames" value="false"/>
 
-            <!--<columnOverride column="content" javaType="java.lang.String" jdbcType="VARCHAR" />-->
-            <!--<columnOverride column="gongzhonghao" javaType="java.lang.String" jdbcType="VARCHAR" />-->
-            <!--<columnOverride column="ywyuedu" javaType="java.lang.String" jdbcType="VARCHAR" />-->
-        </table>
-        <table tableName="tbl_mother_article_comment"
-               domainObjectName="MotherArticleComment" enableCountByExample="true"
-               enableUpdateByExample="true" enableDeleteByExample="true"
-               enableSelectByExample="true" selectByExampleQueryId="true">
 
-            <property name="useActualColumnNames" value="false"/>
-
-            <!--<columnOverride column="content" javaType="java.lang.String" jdbcType="VARCHAR" />-->
-            <!--<columnOverride column="gongzhonghao" javaType="java.lang.String" jdbcType="VARCHAR" />-->
-            <!--<columnOverride column="ywyuedu" javaType="java.lang.String" jdbcType="VARCHAR" />-->
-        </table>
-        <table tableName="tbl_mother_article_love"
-               domainObjectName="MotherArticleLove" enableCountByExample="true"
-               enableUpdateByExample="true" enableDeleteByExample="true"
-               enableSelectByExample="true" selectByExampleQueryId="true">
-
-            <property name="useActualColumnNames" value="false"/>
-
-            <!--<columnOverride column="content" javaType="java.lang.String" jdbcType="VARCHAR" />-->
-            <!--<columnOverride column="gongzhonghao" javaType="java.lang.String" jdbcType="VARCHAR" />-->
-            <!--<columnOverride column="ywyuedu" javaType="java.lang.String" jdbcType="VARCHAR" />-->
-        </table>
     </context>
 </generatorConfiguration>

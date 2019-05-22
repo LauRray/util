@@ -25,7 +25,7 @@ public class GenMain {
 		boolean overwrite = true;
 		// 如果这里出现空指针，直接写绝对路径即可。
 
-		String genCfg = "D:\\AjavaWorkSpace\\database\\database\\src\\main\\resources\\generatorConfig.xml";
+		String genCfg = "D:\\ajavaProject\\database\\database\\src\\main\\resources\\generatorConfig.xml";
 		System.out.println(genCfg);
 
 		File configFile = new File(genCfg);
