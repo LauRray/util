@@ -36,8 +36,13 @@
         </javaModelGenerator>
 
         <!--对应的mapper.xml文件 -->
-        <sqlMapGenerator targetPackage="mapper"
-                         targetProject="./src/main/resources">
+
+        <sqlMapGenerator   targetPackage="com.zhuoshang.gongchengzhaozhaozhao.mapper"
+                           targetProject="./src/main/java">
+
+
+                    <!--    targetPackage="mapper"-->
+                        <!--targetProject="./src/main/resources">-->
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
@@ -49,16 +54,16 @@
         </javaClientGenerator>
 
 
-        <table tableName="tb_construction_team"
-               domainObjectName="ConstructionTeam" enableCountByExample="true"
-               enableUpdateByExample="true" enableDeleteByExample="true"
-               enableSelectByExample="true" selectByExampleQueryId="true">
+        <!--<table tableName="tb_construction_team"-->
+               <!--domainObjectName="ConstructionTeam" enableCountByExample="true"-->
+               <!--enableUpdateByExample="true" enableDeleteByExample="true"-->
+               <!--enableSelectByExample="true" selectByExampleQueryId="true">-->
 
-            <property name="useActualColumnNames" value="false"/>
-            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
-        </table>
-        <table tableName="tb_construction_team_member"
-               domainObjectName="ConstructionTeamMenber" enableCountByExample="true"
+            <!--<property name="useActualColumnNames" value="false"/>-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true"/>-->
+        <!--</table>-->
+        <table tableName="tb_qualification_agency"
+               domainObjectName="QualificationAgency" enableCountByExample="true"
                enableUpdateByExample="true" enableDeleteByExample="true"
                enableSelectByExample="true" selectByExampleQueryId="true">
 
